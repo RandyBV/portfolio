@@ -1,0 +1,338 @@
+$deep-black: #0c0c0cff;
+$ligter-black: #191923ff;
+$active: rgb(19, 119, 233);
+//$active: rgb(17, 203, 250);
+//$active: rgb(253, 37, 37);
+//$active: rgb(0, 26, 255);
+//$active: rgb(255, 102, 0);
+$gray: rgb(161, 160, 160);
+$white: #efefefff;
+
+
+h1{
+    font-size: 3.5rem;
+}
+
+h6{
+    color: $active;
+}
+
+p{
+    color:$gray
+}
+strong{
+    color: $white;
+}
+a{
+    color: $white;
+
+    &:hover{
+        text-decoration: none;
+        color: $white;
+    }
+
+    &:active{
+        background-color: $active;
+    }
+}
+
+
+body{
+    color: $white;
+    background-color: $deep-black;
+}
+
+header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $deep-black;
+    position: fixed;
+    z-index: 15;  
+    width: 100%;
+}
+
+nav {
+        
+    a{
+        color: $white;
+    }
+    
+}
+
+.nav-link{
+    
+        &:hover{color: $active;}
+    
+}
+
+.logo{
+    width: 120px;
+}
+.col{
+    margin: 0px;
+}
+
+.me{
+    height: 600px;
+}
+
+.about{
+    height: 600px;
+    border-radius: .25rem;
+}
+
+.hero {
+
+    padding-top: 5rem;
+    p{
+        padding-top: 1rem ;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+        color: $gray;
+    }
+
+    
+}
+
+.btn-outline-primary{
+    border-color: $active;
+    border-width: 1.5px;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: $white;
+    
+    
+
+    &:hover{
+        text-decoration: none;
+        color: $white;
+        background-color: $active;
+        border-color: $active;
+    }
+
+    &:active{
+        background-color: $active;
+    }
+}
+
+.services{
+    background-color: $ligter-black;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+    i{
+    
+        font-size: 36px;
+        color: $active;
+        padding-bottom: 1rem;
+    }
+
+    p{
+        color: $gray;
+    }
+
+    .card{
+        &:hover{
+            background-color: $active;
+
+            i{
+                color: $ligter-black;
+            }
+            p{
+                color: $white;
+            }
+        }
+    }
+}
+
+.card{
+    background-color: $deep-black;
+    width: 95%;
+    margin: auto;
+    
+
+   
+}
+
+.spacer{
+    font-size: 26px;
+    //font-weight: bold;
+    color: $active;
+    //width: 100%;
+    //height: 10px;
+    padding-bottom: 2rem;
+}
+
+.line{
+    width: 60px;
+    background-color: $active;
+}
+
+.aboutMe{
+    padding: 4rem 0rem ;
+
+    h2{
+        padding-bottom: 0rem;
+    }
+
+    h6{
+        padding-top: 3rem;
+    }
+}
+
+.portfolio{
+    background-color: $ligter-black;
+    padding: 8rem 0rem;
+
+    img{
+        border-radius: .25rem;
+    }
+}
+
+.project {
+    float: left;
+    background-color:$deep-black;
+    color:$white;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 1rem 1rem;
+    display: none;
+
+    
+  }
+
+  .myBtn{
+      background: none;
+      padding: 0em;
+      margin: 0em;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .projects {
+    margin-top: 20px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    width: 86%;
+  }
+
+  .categories .btn{
+      color: $white;
+      background-color: $deep-black;
+      padding: 8px 16px;
+
+      &:hover{
+        background-color: $active;
+      }
+
+      &:active{
+          border-color: $active;
+      }
+
+      &:focus{
+          outline-color: #FFF;
+      }
+  }
+
+  .active{
+    border-color: $active;
+    border-width: 1.5px;
+  }
+  
+  
+  
+  .socialMediaContainer{
+      display: flex;
+      width: 50%;
+      //margin-right: auto;
+      //margin-left: auto;
+      padding-bottom: 2rem;
+      a{
+        &:hover{
+            color: $active;
+        }
+      }
+      
+  }
+
+  .socialMedia{
+      padding: 0px 6px;
+      margin-right: 5px;
+      margin-left: 0px;
+      border-color: $active;
+      border-radius: 50%;
+      border-width: 1.5px;
+      &:hover{
+          color: $active;
+      }
+  }
+
+
+.contact{
+    padding: 8rem 0rem;
+
+    h3{
+        padding-bottom: 2rem;
+    }
+
+    .myInput{
+        width: 1px;
+        height: 1px;
+        background: none;
+        border: none;
+    }
+}
+
+.contactHeader{
+    padding-bottom: 3rem;
+
+    .spacer{
+        padding-bottom: 1rem;
+    }
+}
+ 
+
+.form-control{
+
+    background-color: $ligter-black;
+    border: none;
+
+    &:focus{
+        background-color: $white;
+    }
+
+   
+}
+
+footer{
+    font-weight: bold;
+    background-color: $ligter-black;
+
+    p{
+        padding: 1.5rem 0rem;
+        margin: 0rem;
+        font-size: 14px;
+    };
+}
+
+.carousel-control-next, .carousel-control-prev {
+
+    z-index: 1;
+
+    &:hover{
+        background-color: $active;
+    }
+}
+.carousel-indicators{
+    z-index: 1;
+}
+
+ 
+
+
+ 
